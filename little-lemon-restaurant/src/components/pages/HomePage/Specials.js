@@ -38,7 +38,7 @@ const Specials = () => {
   const navigate = useNavigate();
 
   const onClickMenu = () => {
-    navigate("/underConstruction");
+    navigate("/Developing");
   };
   return (
     <div className="specials">
