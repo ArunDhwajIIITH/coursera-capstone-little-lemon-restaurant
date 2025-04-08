@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import "./Header.css"
 import { Link, useNavigate } from "react-router-dom";
 
+
 function Header() {
     const navigate = useNavigate();
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -18,7 +19,7 @@ function Header() {
 
     const menuItems = [
         { id: 1, label: "Home", link: "/" },
-        { id: 2, label: "About", link: "/about" },
+        { id: 2, label: "About", link: "/Developing" },
         { id: 3, label: "Menu", link: "/Developing" },
         { id: 4, label: "Reservations", link: "/Developing" },
         { id: 5, label: "Order Online", link: "/Developing" },

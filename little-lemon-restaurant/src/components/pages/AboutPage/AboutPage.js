@@ -1,5 +1,6 @@
 import Developing from "../Developing/Developing";
 
+
 function AboutPage() {
     return <Developing/>
 }

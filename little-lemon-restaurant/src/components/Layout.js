@@ -18,7 +18,7 @@ const Layout = ({ children }) => {
           <Route path="/" element={<HomePage />}></Route>
           <Route path="/about" element={<AboutPage />}></Route>
           <Route path="/reservations" element={<ReservationPage />}></Route>
-          <Route path="/underConstruction" element={<Developing />}></Route>
+          <Route path="/Developing" element={<Developing />}></Route>
           <Route path="/confirmedBooking" element={<ConfirmedBooking />}></Route>
         </Routes>
       </Main>
