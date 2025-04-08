@@ -4,11 +4,12 @@
   }
 
 .site-footer .container {
-    grid-template-columns: repeat(4, auto);
+    display: flex; /* Use flexbox for a row layout */
+    flex-direction: row; /* Ensure items are arranged in a row */
+    justify-content: space-evenly; /* Add spacing between items */
+    align-items: center; /* Align items vertically in the center */
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
-    justify-items: center;
-    align-items: center;
 }
 
 .site-footer-logo {
@@ -97,8 +98,10 @@
   }
 
   @media (max-width: 576px) {
-  .site-footer .container {
-    grid-template-columns: auto;
+    .site-footer .container {
+    flex-direction: column; /* Stack items in a column */
+    align-items: center; /* Center items horizontally */
+    gap: 1rem; /* Add spacing between items */
   }
 
   .site-footer-logo {
