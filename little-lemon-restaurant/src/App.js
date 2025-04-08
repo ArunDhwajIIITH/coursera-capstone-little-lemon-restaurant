@@ -1,18 +1,22 @@
-import Header from "./Header";
-import Main from "./Main";
-import Nav from "./Nav";
-import Footer from "./Footer";
-
+import './App.css';
+import Layout from './components/Layout';
+import { BrowserRouter } from 'react-router-dom'
+import { ChakraProvider } from "@chakra-ui/react";
+import { AlertProvider } from "./context/AlertContext";
+import Alert from './components/Alert';
 
 function App() {
   return (
-    <>
-      <Header />     
-      <Nav />
-      <Main />
-      <Footer />
-    </>
-  )  
+    <BrowserRouter>
+      <ChakraProvider>
+        <AlertProvider>
+          <Layout>
+              <Alert />
+          </Layout>
+        </AlertProvider>
+      </ChakraProvider>
+    </BrowserRouter>
+  );
 }
 
 export default App;
